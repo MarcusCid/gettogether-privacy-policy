@@ -1,29 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Privacy Policy – GetTogether</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.7; }
-    h1 { font-size: 2em; margin-bottom: 0.2em; }
-    h2 { font-size: 1.3em; margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
-    h3 { font-size: 1.05em; margin-top: 1.4em; }
-    table { border-collapse: collapse; width: 100%; margin: 1em 0; }
-    th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; }
-    th { background: #f4f4f4; }
-    p, li { margin: 0.5em 0; }
-    ul { padding-left: 1.5em; }
-    a { color: #0070f3; }
-    .subtitle { color: #555; margin-top: 0; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Privacy Policy – GetTogether</title>
+<style>
+  :root {
+    --blue-dark: #2F6FBF;
+    --blue-light: #6FB1E8;
+    --green: #6FCF57;
+    --text: #1a2733;
+    --text-muted: #5b6b7a;
+    --border: #e2e8f0;
+    --bg: #f7fafc;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    line-height: 1.7;
+    background: var(--bg);
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--blue-light) 0%, var(--blue-dark) 100%);
+    padding: 48px 20px 56px;
+    text-align: center;
+    color: white;
+    border-bottom: 6px solid var(--green);
+  }
+
+  header img {
+    width: 96px;
+    height: 96px;
+    border-radius: 22px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    margin-bottom: 16px;
+  }
+
+  header h1 {
+    margin: 0 0 6px;
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  header p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 0.95em;
+  }
+
+  main {
+    max-width: 800px;
+    margin: -30px auto 60px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 40px clamp(20px, 5vw, 56px);
+  }
+
+  h2 {
+    font-size: 1.25em;
+    margin-top: 2.2em;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border);
+    color: var(--blue-dark);
+  }
+
+  h2:first-of-type { margin-top: 0.5em; }
+
+  h3 {
+    font-size: 1.05em;
+    margin-top: 1.5em;
+    color: var(--text);
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+    font-size: 0.92em;
+  }
+
+  th, td {
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    text-align: left;
+  }
+
+  th {
+    background: var(--bg);
+    color: var(--blue-dark);
+    font-weight: 600;
+  }
+
+  tr:nth-child(even) td { background: #fbfdff; }
+
+  p, li { margin: 0.5em 0; }
+  ul { padding-left: 1.4em; }
+
+  a {
+    color: var(--blue-dark);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+  }
+  a:hover { border-bottom-color: var(--blue-dark); }
+
+  .badge {
+    display: inline-block;
+    background: rgba(111, 207, 87, 0.15);
+    color: #2f7a1f;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 0.85em;
+    font-weight: 600;
+  }
+
+  footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.85em;
+    padding: 0 20px 40px;
+  }
+
+  footer a { color: var(--text-muted); }
+</style>
 </head>
 <body>
 
-<h1>Privacy Policy for GetTogether</h1>
-<p class="subtitle"><strong>Last Updated: August 3, 2026</strong></p>
+<header>
+  <img src="GetTogetherIconIOS.png" alt="GetTogether logo" />
+  <h1>Privacy Policy</h1>
+  <p>GetTogether · Last Updated: August 3, 2026</p>
+</header>
 
-<p>This Privacy Policy describes how GetTogether ("the App", "we", "us", or "our") collects, uses, and shares information when you use our mobile application.</p>
+<main>
+
+<p>This Privacy Policy describes how GetTogether ("the App", "we", "us", or "our"), developed by <strong>Marcus Cid</strong>, collects, uses, and shares information when you use our mobile application.</p>
 
 <h2>1. Information We Collect</h2>
 
@@ -70,7 +188,7 @@
   <li>Enable a friends list and a blocking feature to manage who you interact with</li>
   <li>Maintain and improve the App's functionality and security</li>
 </ul>
-<p>We do <strong>not</strong> use your data for third-party advertising, and we do <strong>not</strong> sell your personal information to third parties.</p>
+<p><span class="badge">We do not sell your data</span> and we do not use your data for third-party advertising.</p>
 
 <h2>3. How Information Is Shared</h2>
 
@@ -112,7 +230,7 @@
   <li>Groups that have no remaining members are deleted</li>
   <li>Your authentication record is permanently deleted</li>
 </ul>
-<p>You may also request deletion of your data by contacting us at <a href="mailto:privacy@gettogetherapp.no">privacy@gettogetherapp.no</a>.</p>
+<p>You may also request deletion of your data by contacting us at <a href="mailto:marcusliencid@gmail.com">marcusliencid@gmail.com</a>.</p>
 
 <h2>5. Your Rights and Choices</h2>
 <p>Depending on your location, you may have rights to:</p>
@@ -123,7 +241,7 @@
   <li>Withdraw consent for optional features (e.g., disabling push notifications in Settings)</li>
   <li>Opt out of specific notification types individually within the App</li>
 </ul>
-<p>Residents of the European Economic Area (GDPR) and California (CCPA/CPRA) may have additional rights. To exercise these rights, contact us at <a href="mailto:privacy@gettogetherapp.no">privacy@gettogetherapp.no</a>.</p>
+<p>As GetTogether is operated from Norway, you are entitled to rights under the EU/EEA General Data Protection Regulation (GDPR), including access, rectification, erasure, and data portability. Residents of California may have similar rights under the CCPA/CPRA. To exercise these rights, contact us at <a href="mailto:marcusliencid@gmail.com">marcusliencid@gmail.com</a>.</p>
 
 <h2>6. Children's Privacy</h2>
 <p>GetTogether is not directed at children under the age of 13 (or the equivalent minimum age in your jurisdiction), and we do not knowingly collect personal information from children. If we learn that we have collected personal information from a child without parental consent, we will delete that information promptly.</p>
@@ -134,12 +252,22 @@
 <h2>8. International Data Transfers</h2>
 <p>Your information may be processed and stored on servers located outside your country of residence, including in the United States, via Google Firebase infrastructure. By using the App, you consent to this transfer.</p>
 
-<h2>9. Changes to This Policy</h2>
+<h2>9. Governing Law</h2>
+<p>This Privacy Policy is governed by the laws of Norway, without prejudice to any mandatory data protection rights you have under the GDPR or other applicable local law.</p>
+
+<h2>10. Changes to This Policy</h2>
 <p>We may update this Privacy Policy from time to time. Changes will be posted at this URL with an updated "Last Updated" date. Continued use of the App after changes are posted constitutes acceptance of the revised policy.</p>
 
-<h2>10. Contact Us</h2>
+<h2>11. Contact Us</h2>
 <p>If you have questions about this Privacy Policy or wish to exercise your data rights, contact us at:</p>
-<p><strong>Email:</strong> <a href="mailto:privacy@gettogetherapp.no">privacy@gettogetherapp.no</a></p>
+<p><strong>Developer:</strong> Marcus Cid<br/>
+<strong>Email:</strong> <a href="mailto:marcusliencid@gmail.com">marcusliencid@gmail.com</a></p>
+
+</main>
+
+<footer>
+  <p>© 2026 GetTogether · <a href="https://gettogetherapp.no">gettogetherapp.no</a></p>
+</footer>
 
 </body>
 </html>
